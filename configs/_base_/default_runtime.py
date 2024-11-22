@@ -16,9 +16,12 @@ env_cfg = dict(
 
 vis_backends = [dict(type='LocalVisBackend')]
 visualizer = dict(
-    type='DetLocalVisualizer', vis_backends=vis_backends, name='visualizer')
+    type='DetLocalVisualizer', 
+    vis_backends=vis_backends, 
+    name='visualizer')
 log_processor = dict(type='LogProcessor', window_size=50, by_epoch=True)
 
 log_level = 'INFO'
 load_from = None
 resume = False
+backend_args = None

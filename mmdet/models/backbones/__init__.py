@@ -1,5 +1,6 @@
 # Copyright (c) OpenMMLab. All rights reserved.
-from .csp_darknet import CSPDarknet
+from .base_backbone import BaseBackbone
+from .csp_darknet import CSPDarknet, YOLOv8CSPDarknet
 from .cspnext import CSPNeXt
 from .darknet import Darknet
 from .detectors_resnet import DetectoRS_ResNet
@@ -19,9 +20,9 @@ from .swin import SwinTransformer
 from .trident_resnet import TridentResNet
 
 __all__ = [
-    'RegNet', 'ResNet', 'ResNetV1d', 'ResNeXt', 'SSDVGG', 'HRNet',
+    'BaseBackbone', 'RegNet', 'ResNet', 'ResNetV1d', 'ResNeXt', 'SSDVGG', 'HRNet',
     'MobileNetV2', 'Res2Net', 'HourglassNet', 'DetectoRS_ResNet',
-    'DetectoRS_ResNeXt', 'Darknet', 'ResNeSt', 'TridentResNet', 'CSPDarknet',
+    'DetectoRS_ResNeXt', 'Darknet', 'YOLOv8CSPDarknet', 'ResNeSt', 'TridentResNet', 'CSPDarknet',
     'SwinTransformer', 'PyramidVisionTransformer',
     'PyramidVisionTransformerV2', 'EfficientNet', 'CSPNeXt'
 ]
